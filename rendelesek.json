@@ -1,0 +1,67 @@
+{
+  "rendelesek": [
+    {
+      "id": 2,
+      "Alap": "Rizstészta",
+      "Feltet": "Marha, Csiperke gomba",
+      "Szosz": "Thailand Padthai",
+      "Bonus": "Extra gomba",
+      "Nev": "Fekete Mihály",
+      "Cim": "Nádasdi 22."
+    },
+    {
+      "id": 3,
+      "Alap": "Tojásos tészta",
+      "Feltet": "Tofu, Zöldség mix",
+      "Szosz": "Burma Green Curry",
+      "Bonus": "-",
+      "Nev": "Kis Levente",
+      "Cim": "Tildy 34."
+    },
+    {
+      "id": 4,
+      "Alap": "Üvegtészta",
+      "Feltet": "Csirke, Kaliforniai paprika mix",
+      "Szosz": "China Édes-savanyú",
+      "Bonus": "Tom yum leves",
+      "Nev": "Orosz Enikő",
+      "Cim": "Hunyadi 10."
+    },
+    {
+      "id": 5,
+      "Alap": "Teljes kiörlésű tészta",
+      "Feltet": "Sertés, Kínai kel",
+      "Szosz": "Japan Teriyaki",
+      "Bonus": "-",
+      "Nev": "Pásztor Levente",
+      "Cim": "Kazinczy 24."
+    },
+    {
+      "id": 6,
+      "Alap": "Fehér Rizs",
+      "Feltet": "Csiperke Gomba, Bambuszrügy, Csirke",
+      "Szosz": "Malay Coconut Curry",
+      "Bonus": "2 adag",
+      "Nev": "Tukacs Melinda",
+      "Cim": "Kossuth 5."
+    },
+    {
+      "id": 7,
+      "Alap": "Udon tészta",
+      "Feltet": "Tofu, Zöldség mix,Csiperke gomba",
+      "Szosz": "Laosz Red Curry",
+      "Bonus": "-",
+      "Nev": "Elek István",
+      "Cim": "Vörösmarty 67."
+    },
+    {
+      "id": 8,
+      "Alap": "Barna rizs",
+      "Feltet": "Marha, Csiperke gomba, Bambuszrügy",
+      "Szosz": "Laosz Red Curry",
+      "Bonus": "Extra gomba",
+      "Nev": "Kerekes Ildikó",
+      "Cim": "Kossuth 2."
+    }
+  ]
+}
