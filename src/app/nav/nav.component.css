@@ -1,0 +1,27 @@
+.logo{
+    max-width: 75px;
+}
+.social-media {
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgb(247, 246, 246);
+    display: inline-block;
+    
+}
+
+.social-media:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6rem;
+    z-index: 1;
+    background-color: rgba(70, 69, 69, 0.8);
+}
+.nav-item{
+    margin-top: 7px;
+}

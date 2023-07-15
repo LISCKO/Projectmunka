@@ -1,0 +1,55 @@
+<div class="row" id="elso">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        {{oszlop.text}}
+    </div>
+    <div class="col">
+        Műveletek
+    </div>
+</div>
+<div *ngFor="let rendeles of rendelesek; even as paros" [ngClass]="{parosok:paros}" class="row table-responsive">
+    <div *ngFor="let oszlop of oszlopok" class="col table-responsive">
+        {{rendeles[oszlop.key]}}
+    </div>
+    <div class="col">
+        <div class="row text-center">
+            <div class="col-6">
+                <button (click)="modositas(rendeles)" type="button" class="btn btn-info">Módosítás</button>
+            </div>
+            <div class="col-6">
+                <button (click)="delete(rendeles)" type="button" class="btn btn-danger">Törlés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button type="button" (click)="ujRendeles()" class="btn btn-primary my-5 mx-4">Új Rendelés</button>
+
+<app-modal id="modal-1">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-basic-title">
+            <ng-container *ngIf="rendeles.id; else uj">Rendelés Módosítás</ng-container>
+            <ng-template #uj>Új rendelés</ng-template>
+        </h3>
+        <button (click)="closeModal()" type="button" class="btn-close" aria-labe8l="Close"></button>
+    </div>
+    <div class="modal-body">
+		
+        <div *ngFor="let oszlop of oszlopok" class="form-group">
+            <ng-container *ngIf="oszlop.text=='Azonosító'; else adat">
+                <ng-container *ngIf="rendeles.id">
+                    Azonosító: {{rendeles.id}}
+                    <input [(ngModel)]="rendeles[oszlop.key]" type="hidden" class="form-control" [id]="oszlop.text">
+                </ng-container>
+            </ng-container>
+            <ng-template #adat>
+                <label [for]="oszlop.text">{{oszlop.text}}</label>
+                <input [(ngModel)]="rendeles[oszlop.key]" type="text" class="form-control" [id]="oszlop.text">
+            </ng-template>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" (click)="closeModal()" class="btn btn-success">Mentés</button>
+        <button type="button" (click)="closeModal()" class="btn btn-danger">Bezár</button>
+    </div>
+
+</app-modal>
+
